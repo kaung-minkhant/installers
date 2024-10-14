@@ -1,0 +1,1 @@
+./nix-install.sh --daemon
