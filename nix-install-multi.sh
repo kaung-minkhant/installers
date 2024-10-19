@@ -1,6 +1,7 @@
 ./nix-install.sh --daemon
 
-echo <<EOF | sudo tee ~/.config/nix/nix.conf
-experimental-features = nix-command flakes
-max-jobs = auto
-EOF
+sleep 1
+
+mkdir -p ~/.config/nix
+
+ln -s ~/dotfiles/nix.conf ~/.config/nix/nix.conf
