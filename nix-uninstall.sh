@@ -14,5 +14,6 @@ sudo rm -r /etc/*.backup-before-nix
 sudo sed -i '/# Nix/,/# End Nix/d' /etc/bash.bashrc
 sudo sed -i '/# Nix/,/# End Nix/d' /etc/bashrc
 sudo sed -i '/# Nix/,/# End Nix/d' /etc/profile
+sudo sed -i '/# Nix/,/# End Nix/d' /etc/zsh/zshrc
 sudo rm -r /etc/zsh/zshrc.backup-before-nix
 #echo "be sure to remove files with .backup-before-nix from /etc"
